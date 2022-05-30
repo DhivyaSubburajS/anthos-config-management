@@ -11,10 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# creates namespace named "hello"
-# [START anthosconfig_hello_namespace_namespace] 
-apiVersion: v1
-kind: Namespace
+# [START anthosconfig_hello_namespace_repo] 
+apiVersion: configmanagement.gke.io/v1
+kind: Repo
 metadata:
-  name: hello-d-002
-# [END anthosconfig_hello_namespace_namespace] 
+  name: repo
+spec:
+  version: 1.0.0
+# [END anthosconfig_hello_namespace_repo] 
